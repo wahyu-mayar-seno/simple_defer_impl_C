@@ -9,10 +9,7 @@ void *dmalloc(size_t s) {
   malloc_count++;
   return malloc(s);
 }
-void dfree(void *fj) {
-  free_count++;
-  free(fj);
-}
+void dfree(void *fj) { free(fj); }
 int main(void) {
   Defer_Table t;
   defer_init(&t, 1024);
