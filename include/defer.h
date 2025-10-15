@@ -22,7 +22,6 @@ void defer_destroy(Defer_Table *t);
 int defer_push(Defer_Table *t, DeferFn func, void *data);
 // call all task in defer table
 void defer_exec(Defer_Table *t);
-#define DEFER_C_IMPLEMENTATION
 #ifdef DEFER_C_IMPLEMENTATION
 #include <stdlib.h>
 #include <string.h>

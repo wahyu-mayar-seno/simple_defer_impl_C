@@ -20,10 +20,12 @@ int main(void) {
   void *b = dmalloc(256);
   void *c = dmalloc(256);
   void *d = dmalloc(256);
+  void *e = dmalloc(256);
   defer_push(&t, dfree, a);
   defer_push(&t, dfree, b);
   defer_push(&t, dfree, c);
   defer_push(&t, dfree, d);
+  defer_push(&t, dfree, e);
   defer_exec(&t);
   printf("malloc : %zu\n free : %zu\n", malloc_count, free_count);
 
