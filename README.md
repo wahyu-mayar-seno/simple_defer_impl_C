@@ -1,7 +1,2 @@
 # simple_defer_impl_C
-## foo
-### bar
-#### soo
-##### noo
-###### moo
-####### loo
+#### this is static sized defer table implementation. example of usage are in main.c
